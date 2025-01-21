@@ -1,4 +1,4 @@
-# Avengers Glowing Cube Documentation
+# Avengers Cube Documentation
 
 ## Introduction
 This project creates a visually appealing glowing cube animation and enhances it by playing the Avengers theme song when the page loads or is clicked.
@@ -40,5 +40,3 @@ The JavaScript:
 ## Conclusion
 
 Combining HTML, CSS, and JavaScript, this project creates an engaging glowing cube animation, complemented by the Avengers theme music. The HTML structure sets up the layout, the CSS styles control the visual aspects and animation, while the JavaScript ensures the audio plays as intended.
-
-Feel free to reach out if you have any questions or need further assistance with the project.
