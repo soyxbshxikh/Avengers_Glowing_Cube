@@ -1,9 +1,11 @@
+/* Resets margin, padding, and sets box-sizing for all elements */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Styles for body, centers content both vertically and horizontally */
 body {
   display: flex;
   justify-content: center;
@@ -12,6 +14,7 @@ body {
   background: #050505;
 }
 
+/* Styles for the cube - sets its dimensions and 3D transformation settings */
 .cube {
   position: relative;
   width: 300px;
@@ -19,8 +22,10 @@ body {
   transform-style: preserve-3d;
   transform: rotateX(-30deg);
   animation: animate 4s linear infinite;
+  /* Animation for rotating the cube */
 }
 
+/* Keyframes for cube animation, rotates the cube in Y-axis */
 @keyframes animate {
   0% {
     transform: rotateX(-30deg) rotateY(0deg);
@@ -31,6 +36,7 @@ body {
   }
 }
 
+/* General styles for all divs within the cube, sets 3D transformation context */
 .cube div {
   position: absolute;
   top: 0;
@@ -40,6 +46,7 @@ body {
   transform-style: preserve-3d;
 }
 
+/* Styles for each face of the cube, positions them in 3D space */
 .cube div span {
   position: absolute;
   top: 0;
@@ -47,9 +54,11 @@ body {
   width: 100%;
   height: 100%;
   background: linear-gradient(#151515, #00ec00);
+  /* Gradient background for faces */
   transform: rotateY(calc(90deg * var(--i))) translateZ(150px);
 }
 
+/* Styles for the top face of the cube */
 .top {
   position: absolute;
   top: 0;
@@ -60,6 +69,7 @@ body {
   transform: rotateX(90deg) translateZ(150px);
 }
 
+/* Glowing effect for the top face */
 .top::before {
   content: "";
   position: absolute;
@@ -70,11 +80,14 @@ body {
   background: #0f0;
   transform: translateZ(-400px);
   filter: blur(20px);
-  box-shadow: 0 0 120px rgba(0, 255, 0, 0.2), 0 0 200px rgba(0, 255, 0, 0.4),
-    0 0 300px rgba(0, 255, 0, 0.6), 0 0 400px rgba(0, 255, 0, 0.8),
+  box-shadow: 0 0 120px rgba(0, 255, 0, 0.2),
+    0 0 200px rgba(0, 255, 0, 0.4),
+    0 0 300px rgba(0, 255, 0, 0.6),
+    0 0 400px rgba(0, 255, 0, 0.8),
     0 0 500px rgba(0, 255, 0, 1);
 }
 
+/* Ensures images within cube faces fit the span dimensions */
 .cube div span img {
   width: 300px;
   height: 300px;

@@ -1,23 +1,31 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
   <head>
-    <meta charset="utf-8" />
-    <title></title>
+    <meta charset="UTF-8" />
+    <!-- Ensures the page is responsive for all devices -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avengers Glowing Cube</title>
+    <!-- Link to external CSS stylesheet -->
     <link rel="stylesheet" href="index.css" />
   </head>
-
   <body>
+    <!-- Wrapper for the entire glowing cube animation -->
     <div class="cube">
+      <!-- Top face of the cube -->
       <div class="top"></div>
       <div>
+        <!-- Side faces of the cube with images, each span controls one side -->
         <span style="--i: 0"><img src="img/1.png" alt="no1" /></span>
         <span style="--i: 1"><img src="img/2.png" alt="no2" /></span>
         <span style="--i: 2"><img src="img/3.png" alt="no3" /></span>
         <span style="--i: 3"><img src="img/4.png" alt="no4" /></span>
       </div>
+      <!-- Audio element for playing Avengers theme song -->
       <audio id="song">
         <source src="Avengers.mp3" />
       </audio>
     </div>
+    <!-- Link to external JavaScript script -->
     <script src="script.js"></script>
   </body>
 </html>
